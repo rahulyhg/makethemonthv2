@@ -1,0 +1,109 @@
+body * {
+  box-sizing: border-box; }
+
+.login-container {
+  width: 400px;
+  margin: 100px auto; }
+
+.top-box-login {
+  background-color: #f2f2f2;
+  overflow: auto;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  padding: 10px 20px;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px; }
+
+.login-content {
+  background-color: #444444;
+  padding: 20px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px; }
+
+.login-logo {
+  background-image: url("../images/admin_sprite.png");
+  background-position: -1px -1px;
+  width: 33px;
+  height: 42px;
+  float: left; }
+
+.top-login-right {
+  margin-left: 10px;
+  float: left;
+  font-family: 'Exo', sans-serif; }
+
+.login-title {
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px; }
+
+.login-subtitle {
+  font-size: 13px;
+  color: #999; }
+
+form {
+  display: block;
+  margin-top: 0em; }
+
+.login-row {
+  background-color: #eaeaea;
+  padding: 10px 20px;
+  overflow: auto;
+  border-radius: 2px; }
+
+.admin-login-icon {
+  background-image: url("../images/admin_sprite.png");
+  background-position: -35px 0px;
+  width: 15px;
+  height: 22px;
+  float: left;
+  margin-top: 1px; }
+
+.login-row input {
+  margin-left: 10px;
+  height: 20px;
+  width: 280px;
+  background-color: #eaeaea;
+  border: none; }
+
+.passwd-login-icon {
+  background-image: url("../images/admin_sprite.png");
+  background-position: -35px -21px;
+  width: 14px;
+  height: 20px;
+  float: left;
+  margin-top: 2px; }
+
+.login-btn {
+  margin-top: 20px;
+  text-align: center;
+  background-image: url("../images/login_btn_bg.png");
+  background-repeat: repeat-x;
+  width: 360px;
+  height: 44px;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 0.9;
+  font-weight: bold; }
+
+.msg {
+  width: 100%;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  background-color: #dedede; }
+  .msg p {
+    margin: 0 0 5px; }
+  .msg.error {
+    color: red; }
+  .msg.done {
+    color: green; }
+
+/*# sourceMappingURL=login-style.css.map */

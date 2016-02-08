@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'franklin-gothic-condensed';
+  src: url('../fonts/franklin-gothic-condensed.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/franklin-gothic-condensed.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/franklin-gothic-condensed.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'FranklinGothicLTCom-BkCm';
+  src: url('../fonts/FranklinGothicLTCom-BkCm.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'FranklinGothicLTCom-DmCn';
+  src: url('../fonts/FranklinGothicLTCom-DmCn.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'FranklinGothicLTCom-Md';
+  src: url('../fonts/FranklinGothicLTCom-Md.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'FranklinGothicLTCom-Md';
+  src: url('../fonts/FranklinGothicLTCom-Md.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'ITCFranklinGothicStd-BkCd';
+  src: url('../fonts/ITCFranklinGothicStd-BkCd.otf')  format('otf')
+}
+@font-face {
+  font-family: 'ITCFranklinGothicStd-BkCp';
+  src: url('../fonts/ITCFranklinGothicStd-BkCp.otf')  format('otf')
+}
+@font-face {
+  font-family: 'ITCFranklinGothicStd-DmCd';
+  src: url('../fonts/ITCFranklinGothicStd-DmCd.otf')  format('otf')
+}@font-face {
+  font-family: 'ITCFranklinGothicStd-DmCp';
+  src: url('../fonts/ITCFranklinGothicStd-DmCp.otf')  format('otf')
+}
+@font-face {
+  font-family: 'ITCFranklinGothicStd-HvyIt';
+  src: url('../fonts/ITCFranklinGothicStd-HvyIt.otf')  format('otf')
+}
+@font-face {
+  font-family: 'ITCFranklinGothicStd-MdCd';
+  src: url('../fonts/ITCFranklinGothicStd-MdCd.otf')  format('otf')
+}
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url('../fonts/MyriadPro-Regular.otf')  format('otf')
+}
+$font-general : ITCFranklinGothicStd-MdCd,franklin-gothic-condensed,MyriadPro-Regular;

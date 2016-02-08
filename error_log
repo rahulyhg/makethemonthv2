@@ -1,0 +1,13 @@
+[23-Sep-2015 13:14:09 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home4/alexandries/public_html/mtm/application/models/stats.php on line 24
+[23-Sep-2015 13:15:02 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home4/alexandries/public_html/mtm/application/models/stats.php on line 23
+[23-Sep-2015 13:17:16 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home4/alexandries/public_html/mtm/application/models/stats.php on line 23
+[23-Sep-2015 13:18:26 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home4/alexandries/public_html/mtm/application/models/stats.php on line 23
+[23-Sep-2015 13:18:56 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home4/alexandries/public_html/mtm/application/models/stats.php on line 24
+[23-Sep-2015 13:19:22 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home4/alexandries/public_html/mtm/application/models/stats.php on line 24
+[23-Sep-2015 14:55:05 America/Chicago] PHP Fatal error:  Call to undefined method Stats::get_city() in /home4/alexandries/public_html/mtm/application/controllers/ajax.php on line 69
+[23-Sep-2015 14:57:56 America/Chicago] PHP Fatal error:  Call to undefined method CI_DB_mysql_driver::and_where() in /home4/alexandries/public_html/mtm/application/models/stats.php on line 35
+[26-Sep-2015 14:14:04 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home4/alexandries/public_html/mtm/application/models/stats.php on line 73
+[26-Sep-2015 14:19:43 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home4/alexandries/public_html/mtm/application/models/stats.php on line 134
+[26-Sep-2015 14:21:54 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home4/alexandries/public_html/mtm/application/models/stats.php on line 135
+[26-Sep-2015 14:34:26 America/Chicago] PHP Fatal error:  Only variables can be passed by reference in /home4/alexandries/public_html/mtm/application/models/stats.php on line 133
+[26-Sep-2015 16:17:57 America/Chicago] PHP Fatal error:  Call to a member function start_end() on a non-object in /home4/alexandries/public_html/mtm/application/controllers/admin.php on line 286

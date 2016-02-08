@@ -1,0 +1,51 @@
+$dark-color:#282828;
+$white-color:#ffffff;
+$red-color:#D7281E;
+$text-color:#DCDCDC;
+$text-color2:#828282;
+$text-color3:#4C4C4C;
+
+%book{
+  font-family: "franklin-gothic-urw-cond",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+%book-italic{
+  font-family: "franklin-gothic-urw-cond",sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+%medium{
+  font-family: "franklin-gothic-urw-cond",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+%medium-italic{
+  font-family: "franklin-gothic-urw-cond",sans-serif;
+  font-style: italic;
+  font-weight: 500;
+}
+%demi{
+  font-family: "franklin-gothic-urw-cond",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+%demi-italic{
+  font-family: "franklin-gothic-urw-cond",sans-serif;
+  font-style: italic;
+  font-weight: 700;
+}
+%medium-normal{
+  font-family: "franklin-gothic-urw",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+%heavy-italic{
+  font-family: "franklin-gothic-urw",sans-serif;
+  font-style: italic;
+  font-weight: 900;
+}
+%heavy{
+  font-family: "franklin-gothic-urw",sans-serif;
+  font-weight: 900;
+}

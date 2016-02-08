@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|public|\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?$1
+
+AuthType Basic
+AuthName "This website is private, please fill the required fields with correct informations to login"
+AuthUserFile /home4/alexandries/public_html/mtm/.htpasswd
+require valid-user

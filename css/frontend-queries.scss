@@ -1,0 +1,4829 @@
+@import '_mixin.scss';
+@function ptp($pt) {
+  @return $pt+px;
+}
+
+@media only screen and (max-height:1499px){
+  .home{
+    >div {
+      padding-top:2%;
+      padding-bottom:0;
+    }
+    h2{
+      margin-bottom:50px;
+    }
+    img{
+      margin-bottom:40px;
+    }
+    .select-custom{
+      .select-options-content ul.open{
+        height:270px;
+      }
+      h2{
+        padding:30px 0;
+      }
+    }
+  }
+  .scenario{
+    h1{
+      margin-top:90px;
+      margin-bottom:90px;
+    }
+  }
+  .scenario--single{
+    .title-content>div{
+      img{
+        width:350px;
+      }
+    }
+  }
+  .scenario--rent{
+    h2{
+      margin-bottom:40px;
+      padding-bottom:40px;
+    }
+    .rent-scene--up{
+      margin-bottom:0;
+    }
+    .rent-scene--down{
+      margin-bottom:120px;
+    }
+  }
+  .question-ask>div{
+    h2{
+      margin:40px 0;
+    }
+    h4{
+      margin:50px 0 100px;
+    }
+  }
+  .question-answer > div .consequence-box{
+    padding:50px 50px 150px;
+    h4{
+      margin:25px 0;
+    }
+    h2{
+      margin-bottom:35px;
+    }
+    .button-answer{
+      bottom:40px
+    }
+  }
+  .donate-scene>div{
+    h1{
+      margin:25px 0 50px;
+    }
+    img{
+      width:200px;
+    }
+  }
+  .win-lose-scene > div{
+    h1{
+      margin:0 0 20px;
+      font-size:80px;
+      line-height:82px;
+    }
+    h3{
+      margin-bottom:10px;
+    }
+  }
+  nav > ul > li{
+    padding:1% 10px;
+    &.left-days > div{
+      &.menu-subtitle{
+        margin:0;
+      }
+      &.payday-status{
+        margin-top:0;
+      }
+    }
+    &.left-buget > div.menu-subtitle{
+      margin-bottom:0;
+    }
+    svg{
+      margin-top:5px;
+      margin-bottom:10px;
+    }
+  }
+}
+
+@media only screen and (max-width:2450px){
+  .home{
+    img{
+      width:370px;
+    }
+    h2.small{
+      font-size:45px;
+      line-height:105%;
+      &.red-text{
+        font-size:60px;
+      }
+    }
+    .select-custom{
+      .select-options-content{
+        >h3 i{
+          font-size:40px;
+          top:20px;
+        }
+      }
+      h3{
+        padding:25px 0;
+      }
+    }
+  }
+  .scenario--single{
+    .title-content{
+      img{
+        width:350px;
+      }
+    }
+    h3{
+      font-size:35px;
+      line-height:100%;
+    }
+    p{
+      font-size:50px;
+      line-height:100%;
+    }
+  }
+  footer li{
+    padding:0 20px;
+    a{
+      font-size:24pt;
+    }
+  }
+  nav{
+    width:400px;
+    > ul > li.left-buget > div.menu-subtitle{
+      font-size:30px;
+    }
+  }
+  .col3{
+    padding: 0 30px;
+  }
+  .scenario--rent{
+    .rent-scene--up h3{
+      margin-bottom:0;
+      margin-top:30px;
+    }
+  }
+  .question-ask > div .answers-content .answer-box > div > h3{
+    padding:0 20px;
+    font-size:39px;
+    line-height:45px;
+  }
+  .question-answer > div .consequence-box h2{
+    font-size:50px;
+    line-height:105%;
+  }
+  .donate-scene >div{
+    h1{
+      font-size:85px;
+      line-height:105%;
+    }
+    .buttons-bottom a{
+      font-size:50px;
+      padding:35px 0;
+    }
+  }
+  .win-lose-scene>div{
+    h1{
+      font-size:65px;
+      line-height:105%;
+    }
+    h3{
+      font-size:36px;
+      line-height:100%;
+    }
+    .button-bottom{
+      margin:50px 0;
+      .each-button{
+        min-height:300px;
+        > div{
+          padding-top:20px;
+          &.social-icons>div{
+            margin-top:-20px;
+            margin-bottom:20px;
+            a{
+              margin:15px 20px 0;
+            }
+          }
+          h3{
+            margin-bottom:0;
+            padding: 20px 3%;
+          }
+        }
+      }
+    }
+  }
+  .overlay .pop-up{
+    .pop-up-container{
+      >h2{
+        font-size:50px;
+        line-height:50px;
+      }
+      .pop-up-content{
+        li{
+          padding-left:30px;
+        }
+        h1{
+          font-size:80px;
+        }
+        h2{
+          font-size:70px;
+        }
+        h3{
+          font-size:50px;
+        }
+        h4{
+          font-size:35px;
+        }
+        h5{
+          font-size:20px
+        }
+        p{
+          font-size:30px;
+        }
+      }
+    }
+    &.take-action{
+      .pop-up-container .pop-up-content{
+        .take-action-content{
+          h2{
+            font-size:45px;
+          }
+          p{
+            font-size:25px;
+          }
+          img{
+            width:130px;
+          }
+        }
+        .take-action-share{
+          padding:30px 10%;
+          .col4{
+            .icon-social{
+              i{
+                font-size:65px;
+              }
+            }
+            font-size:35px;
+          }
+        }
+      }
+    }
+    &.email-template{
+      .pop-up-content{
+        input[type="submit"]{
+          font-size:30px;
+          padding:10px 20px;
+        }
+        li{
+          padding:0 !important;
+        }
+        h5{
+          font-size:35px;
+        }
+        .user-details, .invite-friends{
+          input{
+            padding:10px 20px;
+            font-size:30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-height:1279px){
+  footer li a{
+    font-size:22pt;
+  }
+  .home{
+    h1{
+      margin-bottom:10px;
+      font-size:100px;
+    }
+    h2{
+      font-size:50px;
+      line-height:55px;
+      &.small{
+        font-size:39px;
+      }
+    }
+    .select-custom{
+      h3{
+        font-size:30px;
+        line-height:35px;
+      }
+      .select-options-content ul.open{
+        height:230px;
+      }
+    }
+  }
+  .city{
+    .box-city{
+      .upper-icon{
+        width:200px;
+        top:-70px;
+        margin-bottom:-40px;
+      }
+      h1{
+        font-size:90px;
+        line-height:105%;
+        margin-bottom:25px;
+      }
+      hr{
+        height:4px;
+      }
+      .buttons-content{
+        margin-bottom:60px;
+      }
+    }
+  }
+  .scenario{
+    h1{
+      margin-top:60px;
+      margin-bottom:60px;
+      font-size:70px;
+      line-height:105%;
+    }
+    .each-box {
+      width: 450px;
+      &:hover {
+        .icon-box {
+          height: 450px;
+        }
+        h3 {
+          font-size: ptp(50);
+        }
+      }
+      .icon-box {
+        height: 290px;
+      }
+    }
+    h3{
+      margin-top:30px;
+    }
+  }
+  .scenario--single{
+    .title-content{
+      h3{
+        font-size: 27px;
+        margin-bottom:50px;
+      }
+      img{
+        width:270px;
+      }
+    }
+    p{
+      font-size:40px;
+      min-height:100px;
+    }
+  }
+  .scenario--rent{
+    h2{
+      font-size:40px;
+      line-height:43px;
+    }
+    .rent-scene--up{
+      img{
+        width:300px;
+      }
+      p{
+        font-size:30px;
+        line-height: 40px;
+      }
+      h3{
+        font-size:100px;
+        margin-top:10px;
+      }
+    }
+    .rent-scene--down{
+      margin:40px 0 80px;
+    }
+  }
+  .col3{
+    padding: 0 20px;
+    text-align: center;
+  }
+  .question-ask >div{
+    .answers-content .answer-box> div{
+      .number{
+        width:60px;
+        height:60px;
+        top:-30px;
+        margin-left:-30px;
+        h3{
+          line-height:60px;
+        }
+      }
+      >h3{
+        font-size:35px;
+        padding: 0 15px;
+        line-height:105%;
+      }
+    }
+  }
+  .question-answer >div{
+    .consequence-box{
+      h2{
+        font-size:45px;
+      }
+      h4{
+        font-size:25px;
+        margin:20px 0;
+      }
+      .button-answer{
+        padding:20px 30px;
+        h3{
+          font-size:30px;
+          line-height: 105%;
+        }
+      }
+    }
+  }
+  .donate-scene > div{
+    h1{
+      font-size:75px;
+      margin:20px 0;
+    }
+    img{
+      width:150px;
+    }
+    h2{
+      font-size:40px;
+      line-height:105%;
+    }
+    .buttons-bottom a{
+      font-size:45px;
+      padding:30px 0;
+      width:350px;
+    }
+  }
+  .win-lose-scene>div{
+    .button-bottom{
+      margin:25px 0;
+    }
+  }
+  nav{
+    width:350px;
+    > ul > li{
+      &.left-days > div{
+        &.payday-status{
+          font-size:50px;
+          line-height:100%;
+        }
+      }
+      &.left-buget > div.buget-animate{
+        width:80px;
+        height:80px;
+        margin-top:15px;
+        div{
+          line-height:75px;
+        }
+      }
+      img{
+        max-width: 80%;
+      }
+    }
+  }
+  .flip-clock-wrapper ul{
+    height:150px;
+    margin:0;
+    width:50%;
+    li a div{
+      &.up:after{
+        top:70px;
+      }
+      div.inn{
+        font-size:150px;
+        line-height: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 2048px){
+  .home{
+    h2.small{
+      font-size:36px;
+    }
+  }
+  .win-lose-scene >div{
+    h1{
+      font-size:60px;
+    }
+    h3{
+      font-size:30px;
+    }
+    .button-bottom .each-button{
+      min-height: 250px;
+      >div.social-icons>div a{
+        margin:15px 15px 0;
+        width:65px;
+        height:65px;
+        i{
+          line-height: 65px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-height:1080px){
+  .home{
+    h1{
+      font-size:80px;
+      line-height:120%;
+    }
+    h2{
+      font-size:40px;
+      line-height:105%;
+      &.small{
+        font-size:30px;
+      }
+    }
+    img{
+      width:300px;
+    }
+    .select-custom{
+      width:550px;
+      h3{
+        line-height:100%;
+        padding:20px 0;
+      }
+      .select-option-play{
+        width:120px;
+      }
+      .select-options-content{
+        width:430px;
+        >h3 i{
+          top:15px;
+        }
+        ul.open{
+          height:205px;
+        }
+      }
+    }
+  }
+  .scenario > div{
+    .each-box {
+      width: 400px;
+      &:hover {
+        .icon-box {
+          height: 400px;
+        }
+        h3 {
+          font-size: ptp(40);
+        }
+      }
+      .icon-box {
+        height: 240px;
+      }
+    }
+    h3{
+      margin-top:20px;
+      font-size:30px;
+      line-height: 105%;
+    }
+    .button-border{
+      margin-top:30px;
+      padding:25px 45px;
+      font-size:30px;
+    }
+  }
+  .scenario--single >div{
+    .button-box{
+      margin:40px 0;
+      padding: 20px 50px;
+      font-size:40px;
+    }
+  }
+  .scenario--rent{
+    .rent-scene--up{
+      img{
+        width:50%;
+      }
+      p{
+        line-height: 100%;
+      }
+      h3{
+        font-size:70px;
+      }
+      .col3.has-border{
+        padding-top:20px;
+        padding-bottom:20px;
+      }
+    }
+  }
+  .question-ask>div{
+    h2{
+      margin:20px 0;
+      font-size:40px;
+      line-height: 105%;
+    }
+    h4{
+      margin:30px 0 60px;
+      font-size:30px;
+    }
+  }
+  .question-answer>div .consequence-box{
+    h2{
+      font-size:37px;
+    }
+    h4{
+      font-size:23px;
+      margin:15px 0;
+    }
+  }
+  .donate-scene > div {
+    h1{
+      font-size:65px;
+      margin:15px 0;
+    }
+    h2{
+      font-size:35px;
+    }
+    .buttons-bottom a{
+      font-size:30px;
+      padding:20px 0;
+      width: 300px;
+    }
+  }
+  .win-lose-scene >div{
+    h1{
+      font-size:48px;
+      padding:0 30px;
+    }
+    h3{
+      padding:0 50px;
+    }
+    ul li h3{
+      margin-bottom:5px;
+    }
+  }
+  nav{
+    width:300px;
+    > ul > li {
+      padding:4% 10px;
+      &.left-days>div{
+        &.menu-subtitle{
+          font-size:20px;
+          line-height: 100%;
+        }
+        &.payday-status{
+          font-size:35px;
+          margin-top:10px;
+        }
+      }
+      &.left-buget > div{
+        &.remain-buget span{
+          font-size:75px;
+          line-height: 90px;
+          &.dolar-sign{
+            font-size:45px;
+          }
+        }
+        &.menu-subtitle{
+          font-size:20px;
+          line-height: 100%;
+        }
+      }
+      .menu-title{
+        margin-bottom:5px;
+        font-size:21px;
+        line-height: 100%;
+      }
+    }
+  }
+  .overlay .pop-up{
+    .pop-up-container{
+      >h2{
+        font-size:30px;
+        line-height:100%;
+      }
+      .pop-up-content{
+        li{
+          padding-left:20px;
+          font-size:20px;
+        }
+        h1{
+          font-size:60px;
+        }
+        h2{
+          font-size:50px;
+        }
+        h3{
+          font-size:40px;
+        }
+        h4{
+          font-size:25px;
+        }
+        h5{
+          font-size:20px
+        }
+        p{
+          font-size:20px;
+        }
+      }
+    }
+    &.take-action{
+      .pop-up-container .pop-up-content{
+        .take-action-content{
+          h2{
+            font-size:30px;
+          }
+          p{
+            font-size:20px;
+          }
+          img{
+            width:95px;
+          }
+        }
+        .take-action-share{
+          padding:20px 10%;
+          .col4{
+            .icon-social{
+              i{
+                font-size:55px;
+              }
+            }
+            h3{
+              font-size:30px;
+            }
+          }
+        }
+      }
+    }
+    &.email-template{
+      .pop-up-content{
+        input[type="submit"]{
+          font-size:20px;
+          padding:10px 20px;
+          margin-top:30px;
+        }
+        li{
+          padding:0 !important;
+        }
+        h5{
+          font-size:25px;
+          margin-top:30px;
+        }
+        .user-details, .invite-friends{
+          input{
+            padding:10px 20px;
+            font-size:20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1899px){
+  footer li{
+    padding:0 15px;
+    a{
+      font-size:20pt;
+    }
+  }
+  .scenario--rent .rent-scene--down .col3 h4{
+    font-size:40px;
+  }
+  .question-ask>div .answers-content .answer-box>div>h3{
+    font-size:27px;
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-height: 990px){
+  nav{
+    > ul > li {
+      padding:1% 10px;
+      &.left-days>div{
+        &.payday-status{
+          font-size:35px;
+          margin-top:0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-height: 900px){
+  .home{
+    h1{
+      font-size:70px;
+    }
+    h2{
+      font-size:35px;
+      margin-bottom:30px;
+      &.small{
+        font-size:23px;
+      }
+    }
+    img{
+      width: 200px;
+      margin-bottom:30px;
+    }
+    .select-custom{
+      .select-options-content>h3 i{
+        top:10px;
+      }
+      h3{
+        font-size:25px;
+        padding: 15px 0;
+      }
+      .select-options-content ul{
+        &.open{
+          height:175px;
+        }
+        li h3{
+          padding:15px 0;
+        }
+      }
+    }
+    .language-button{
+      top:20px;
+      a{
+        font-size:30px;
+      }
+    }
+  }
+  .city .box-city{
+    .upper-icon{
+      width: 150px;
+    }
+    width: 900px;
+    padding: 0 70px;
+    h1{
+      font-size:70px;
+      margin-bottom:15px;
+    }
+    h4{
+      font-size:30px;
+      line-height: 100%;
+      margin:20px 0;
+    }
+    .buttons-content{
+      margin-bottom:30px;
+    }
+  }
+  .scenario>div{
+    h1{
+      font-size:50px;
+      margin-top:40px;
+      margin-bottom:40px;
+    }
+    .each-box {
+      width: 300px;
+      padding:50px;
+      &:hover {
+        .icon-box {
+          height: 300px;
+        }
+        h3 {
+          font-size: ptp(30);
+        }
+      }
+      .icon-box {
+        height: 200px;
+      }
+    }
+    .button-border{
+      margin-top:20px;
+      padding:15px 40px;
+      font-size:20px;
+    }
+  }
+  .scenario--single>div {
+    .title-content{
+      img{
+        width: 200px;
+      }
+      h2{
+        font-size:20px;
+        margin-bottom: 20px;
+      }
+    }
+    p{
+      font-size:30px;
+    }
+    .button-box{
+      padding:15px 30px;
+      margin:30px 0;
+      font-size:30px;
+    }
+    .reload-button{
+      font-size:25px;
+      line-height: 100%;
+    }
+  }
+  .scenario--rent{
+    h2{
+      font-size:25px;
+      line-height: 30px;
+      margin-bottom:30px;
+      padding-bottom: 30px;
+    }
+    .rent-scene--up{
+      p{
+        font-size:20px;
+      }
+      h3{
+        font-size:55px;
+      }
+    }
+    .rent-scene--down{
+      margin:40px 0 60px;
+      .col3{
+        h4{
+          font-size:35px;
+        }
+      }
+    }
+  }
+  .button-box{
+    padding:15px 40px;
+    font-size:30px;
+    line-height: 30px;
+  }
+  footer li a{
+    font-size:18pt;
+  }
+  .question-ask >div{
+    img{
+      width:140px;
+    }
+    h2{
+      font-size:35px;
+      margin:15px 0;
+    }
+    h4{
+      margin:20px 0 40px;
+      font-size:25px;
+      line-height:105%;
+    }
+    .answers-content .answer-box>div .number{
+      width: 50px;
+      height: 50px;
+      top:-25px;
+      margin-left:-25px;
+      h3{
+        line-height: 48px;
+        font-size:35px;
+      }
+    }
+  }
+  .question-answer>div .consequence-box{
+    padding:35px 35px 100px;
+    h2{
+      font-size:30px;
+      margin-bottom:25px;
+    }
+    h4{
+      font-size:20px;
+      margin:10px 0;
+    }
+    .button-answer{
+      bottom:15px;
+      padding:10px 20px;
+      h3{
+        font-size:25px;
+      }
+    }
+  }
+  .donate-scene > div{
+    img{
+      width:100px;
+    }
+    h1{
+      font-size:45px;
+    }
+    h2{
+      font-size:27px;
+    }
+    .buttons-bottom{
+      a{
+        font-size:25px;
+        padding:15px;
+        width:200px;
+      }
+    }
+  }
+  .win-lose-scene > div{
+    font-size:40px;
+    h3{
+      font-size:25px;
+    }
+    ul li h3{
+      font-size:25px;
+      margin-bottom:0;
+      display:block;
+    }
+    .button-bottom .each-button{
+      min-height:190px;
+      >div{
+        &.social-icons>div{
+          margin-bottom:15px;
+          a{
+            width:50px;
+            height: 50px;
+            margin:10px 10px 0;
+            font-size:35px;
+            i{
+              line-height: 50px;
+            }
+          }
+        }
+        img{
+          width:70px;
+        }
+      }
+    }
+  }
+  nav{
+    width: 270px;
+    >ul>li{
+      padding: 5% 10px;
+      &.left-days>div{
+        &.menu-title{
+          font-size:25px;
+          line-height: 100%;
+        }
+        &.menu-subtitle{
+          font-size:18px;
+        }
+        &.payday-status{
+          font-size:30px;
+        }
+      }
+      &.left-buget>div{
+        &.buget-animate{
+          width:60px;
+          height:60px;
+          div{
+            font-size:50px;
+            line-height: 57px;
+          }
+        }
+        &.remain-buget span{
+          font-size:60px;
+          line-height:65px;
+          &.dolar-sign{
+            font-size:30px;
+          }
+        }
+        &.menu-subtitle{
+          font-size:18px;
+        }
+      }
+
+      img{
+        max-width:60%;
+      }
+      .menu-title{
+        font-size:19px;
+      }
+      svg{
+        width:18%;
+        margin-bottom:0;
+      }
+    }
+  }
+  .flip-clock-wrapper ul{
+    height:100px;
+    margin:0;
+    width:50%;
+    li a div{
+      &.up:after{
+        top:47px;
+      }
+      div.inn{
+        font-size:100px;
+        line-height: 100%;
+      }
+    }
+  }
+  .overlay .pop-up{
+    .pop-up-container{
+      >h2{
+        font-size:25px;
+      }
+      .pop-up-content{
+        li{
+          padding-left:20px;
+          font-size:18px;
+        }
+        h1{
+          font-size:40px;
+        }
+        h2{
+          font-size:30px;
+        }
+        h3{
+          font-size:25px;
+        }
+        h4{
+          font-size:20px;
+        }
+        h5{
+          font-size:15px
+        }
+        p{
+          font-size:15px;
+        }
+      }
+    }
+    .close-pop-up{
+      font-size:30px;
+    }
+    &.take-action{
+      .pop-up-container .pop-up-content{
+        .take-action-content{
+          h2{
+            font-size:26px;
+            margin:13px 0;
+          }
+          p{
+            font-size:18px;
+            margin-bottom:20px;
+          }
+          img{
+            width:75px;
+          }
+        }
+        .take-action-share{
+          padding:20px 10%;
+          .col4{
+            .icon-social{
+              i{
+                font-size:45px;
+              }
+            }
+            h3{
+              font-size:20px;
+            }
+          }
+        }
+      }
+    }
+    &.email-template{
+      width:50%;
+      .pop-up-content{
+        input[type="submit"]{
+          font-size:15px;
+          padding:5px 10px;
+          margin-top:20px;
+        }
+        li{
+          padding:0 !important;
+        }
+        h5{
+          font-size:20px;
+          margin-top:20px;
+        }
+        .user-details, .invite-friends{
+          input{
+            padding:5px 10px;
+            font-size:15px;
+            border-width: 2px;
+          }
+        }
+      }
+    }
+  }
+  .not-found .not-found-center{
+    img{
+      width:170px;
+      margin-bottom:5%;
+    }
+    h3{
+      font-size:40px;
+      line-height:100%;
+    }
+    a h3{
+      margin-top:5%;
+    }
+  }
+}
+
+@media only screen and (width:1600px) and (max-height: 900px){
+  nav>ul>li svg{
+    width:22%;
+  }
+  nav>ul>li img{
+    max-width: 80%;
+  }
+  nav>ul>li.left-days>div.payday-status{
+    margin-top:10px;
+  }
+  .overlay .pop-up.take-action{
+    width: 50%;
+  }
+}
+
+@media only screen and (max-height:800px){
+  nav {
+    >ul> li {
+      padding:1% 10px;
+    }
+  }
+}
+
+@media only screen and (width:1280px) and (max-height: 800px){
+  nav ul li.left-days>div.payday-status{
+    margin-top:10px;
+  }
+  nav ul li.left-days>div.menu-subtitle{
+    margin-top:10px;
+  }
+  nav>ul>li{
+    padding:7% 10px;
+  }
+  .overlay .pop-up.take-action{
+    width:50%;
+  }
+}
+
+@media only screen and (width:1220px) and (max-height: 800px){
+  nav ul li.left-days>div.payday-status{
+    margin-top:10px;
+  }
+  nav ul li.left-days>div.menu-subtitle{
+    margin-top:10px;
+  }
+  nav>ul>li{
+    padding:7% 10px;
+  }
+  .overlay .pop-up.take-action{
+    width:50%;
+  }
+}
+
+@media only screen and (width:1128px) and (max-height: 800px){
+  nav ul li.left-days>div.payday-status{
+    margin-top:10px;
+  }
+  nav ul li.left-days>div.menu-subtitle{
+    margin-top:10px;
+  }
+  nav>ul>li{
+    padding:7% 10px;
+  }
+  .overlay .pop-up.take-action{
+    width:50%;
+  }
+}
+
+@media only screen and (width:1067px) and (max-height: 800px){
+  nav ul li.left-days>div.payday-status{
+    margin-top:10px;
+  }
+  nav ul li.left-days>div.menu-subtitle{
+    margin-top:10px;
+  }
+  nav>ul>li{
+    padding:7% 10px;
+  }
+  .overlay .pop-up.take-action{
+    width:50%;
+  }
+}
+
+@media only screen and (max-width: 1599px){
+  footer li a{
+    font-size:16pt;
+  }
+  .question-ask>div .answers-content .answer-box>div>h3{
+    font-size:25px;
+  }
+  .win-lose-scene>div{
+    h1{
+      font-size:40px;
+    }
+    .button-bottom .each-button>div.social-icons>div{
+      padding:0 25px;
+    }
+    h3{
+      font-size:21px;
+    }
+    ul li h3{
+      font-size:21px;
+    }
+  }
+}
+
+@media only screen and (max-width:1400px){
+  .question-ask>div .answers-content .answer-box>div>h3{
+    font-size:20px;
+  }
+  footer li{
+    padding: 0 10px;
+    a{
+      font-size:15pt;
+    }
+  }
+  .not-found .not-found-center{
+    img{
+      width:130px;
+      margin-bottom:5%;
+    }
+    h3{
+      font-size:30px;
+      line-height:100%;
+    }
+    a h3{
+      margin-top:5%;
+    }
+  }
+}
+
+@media only screen and (width:1366px) and (max-height: 768px){
+  nav ul li.left-days>div.payday-status{
+    margin-top:10px;
+  }
+  nav ul li.left-days>div.menu-subtitle{
+    margin-top:10px;
+  }
+  nav>ul>li{
+    padding:3% 10px;
+  }
+  .overlay .pop-up.take-action{
+    width:70%;
+  }
+  .win-lose-scene>div .button-bottom .each-button{
+    min-height: 200px;
+  }
+}
+
+@media only screen and (width:1024px) and (max-height: 768px){
+  nav ul li.left-days>div.payday-status{
+    margin-top:10px;
+  }
+  nav ul li.left-days>div.menu-subtitle{
+    margin-top:10px;
+  }
+  nav>ul>li{
+    padding:7% 10px;
+  }
+  .overlay .pop-up.take-action{
+    width:60%;
+  }
+}
+
+@media only screen and (max-height:700px){
+  .home {
+    .language-button{
+      top:10px;
+      right:15px;
+      a{
+        font-size:20px;
+      }
+    }
+    h1{
+      font-size:50px;
+    }
+    h2{
+      font-size:25px;
+      margin-bottom:20px;
+      &.small{
+        font-size:19px;
+      }
+    }
+    img{
+      width:150px;
+      margin-bottom:20px;
+    }
+    .select-custom{
+      width:400px;
+      .select-options-content{
+        width: 330px;
+        ul.open{
+          height: 155px;
+        }
+        >h3 i{
+          top:7px;
+          font-size:30px;
+        }
+      }
+      .select-option-play{
+        width:70px;
+      }
+      h3{
+        font-size:20px;
+      }
+    }
+  }
+  .city{
+    .box-city{
+      width:700px;
+      .upper-icon{
+        width:120px;
+      }
+      h1{
+        font-size:55px;
+      }
+      h4{
+        font-size:30px;
+        margin:15px 0;
+      }
+      .buttons-content{
+        margin-bottom:20px;
+        .btn{
+          font-size:27px;
+          padding:15px 0;
+        }
+      }
+    }
+  }
+  .scenario>div{
+    h1{
+      font-size:40px;
+      margin-top:30px;
+      margin-bottom:30px;
+    }
+    .each-box {
+      width: 250px;
+      padding:50px;
+      &:hover {
+        .icon-box {
+          height: 250px;
+        }
+        h3 {
+          font-size: ptp(25);
+        }
+      }
+      .icon-box {
+        height: 150px;
+      }
+    }
+    .button-border{
+      margin-top:15px;
+      padding:10px 25px;
+      font-size:20px;
+    }
+    h3{
+      font-size:20px;
+      margin-top:15px;
+    }
+  }
+  .scenario--single >div{
+    .title-content{
+      img{
+        width:150px;
+      }
+      h3{
+        font-size:18px;
+        margin-bottom:25px;
+      }
+    }
+    p{
+      font-size:25px;
+    }
+    .button-box{
+      padding:10px 25px;
+      font-size:25px;
+    }
+    .reload-button{
+      font-size:15px;
+    }
+  }
+  footer li a{
+    font-size:13pt;
+  }
+  .scenario--rent{
+    h2{
+      font-size:22px;
+      line-height:110%;
+    }
+    .rent-scene--up{
+      p{
+        font-size:18px;
+      }
+      h3{
+        font-size:45px;
+        margin-top:0;
+      }
+    }
+    .rent-scene--down{
+      margin:25px 0 40px;
+      .col3{
+        &.has-slider{
+          .slider .dragger{
+            width:60px;
+            height:60px;
+          }
+        }
+        h4{
+          font-size:27px;
+        }
+      }
+    }
+  }
+  .button-box{
+    padding:10px 30px;
+    font-size:25px;
+    line-height: 100%;
+  }
+  .question-ask > div{
+    img{
+      width:100px;
+    }
+    h2{
+      font-size:30px;
+    }
+    h4{
+      font-size:20px;
+      margin:15px 0 30px;
+    }
+    .answers-content{
+      .answer-box>div{
+        .number{
+          width:35px;
+          height:35px;
+          top:-17px;
+          margin-left:-17px;
+          h3{
+            font-size:25px;
+            line-height:35px;
+          }
+        }
+        >h3{
+          font-size:16px;
+        }
+      }
+    }
+  }
+  .question-answer > div .consequence-box{
+    padding:20px 20px 60px;
+    h4{
+      font-size:18px;
+    }
+    h2{
+      font-size:23px;
+      margin-bottom:15px;
+    }
+    .button-answer{
+      bottom:10px;
+      h3{
+        font-size:20px;
+      }
+    }
+  }
+  .donate-scene > div{
+    img{
+      width:80px;
+    }
+    h1{
+      font-size:35px;
+    }
+    h2{
+      font-size:20px;
+    }
+    .buttons-bottom{
+      margin-top:40px;
+      a{
+        font-size:20px;
+        padding:10px 0;
+        width:160px;
+      }
+    }
+  }
+  .win-lose-scene > div{
+    h1{
+      font-size:30px;
+      margin-bottom:15px;
+    }
+    h3{
+      font-size:18px;
+    }
+    ul li h3{
+      font-size:18px;
+      span{
+        width:5px;
+        height:5px;
+      }
+    }
+    .button-bottom .each-button{
+      min-height: 160px;
+      >div{
+        &.social-icons>div{
+          padding:0 20px;
+          margin-bottom:10px;
+          a{
+            width:40px;
+            height:40px;
+            font-size:30px;
+            i{
+              line-height:40px;
+              font-size:27px;
+            }
+          }
+        }
+        img{
+          width:50px;
+        }
+      }
+    }
+  }
+  nav{
+    width:210px;
+    ul li{
+      &.left-days>div{
+        &.menu-title{
+          font-size:18px;
+        }
+        &.payday-status{
+          font-size:25px;
+          margin-top:3px;
+        }
+        &.flip-clock-wrapper:after{
+          width:80%;
+          margin-left:-40%;
+        }
+        &.menu-subtitle{
+          font-size:14px;
+        }
+      }
+      &.left-buget>div{
+        &.buget-animate{
+          width:45px;
+          height:45px;
+          margin-top:5px;
+          div{
+            font-size:40px;
+            line-height:43px;
+          }
+        }
+        &.menu-subtitle{
+          font-size:14px;
+        }
+      }
+      .menu-title{
+        font-size:16px;
+      }
+    }
+  }
+  .flip-clock-wrapper ul{
+    height:80px;
+    li a div{
+      &.up:after{
+        top:37px;
+      }
+      div.inn{
+        font-size:80px;
+        line-height: 90%;
+      }
+    }
+  }
+  .overlay .pop-up{
+    .pop-up-container{
+      >h2{
+        font-size:15px;
+      }
+      .pop-up-content{
+        li{
+          padding-left:10px;
+          font-size:12px;
+        }
+        h1{
+          font-size:30px;
+        }
+        h2{
+          font-size:25px;
+        }
+        h3{
+          font-size:21px;
+        }
+        h4{
+          font-size:18px;
+        }
+        h5{
+          font-size:11px
+        }
+        p{
+          font-size:12px;
+        }
+      }
+    }
+    .close-pop-up{
+      font-size:20px;
+    }
+    &.take-action{
+      width:70%;
+      .pop-up-container .pop-up-content{
+        .take-action-content{
+          h2{
+            font-size:20px;
+            margin:13px 0;
+          }
+          p{
+            font-size:13px;
+          }
+          img{
+            width:55px;
+          }
+        }
+        .take-action-share{
+          padding:20px 10%;
+          .col4{
+            .icon-social{
+              i{
+                font-size:30px;
+              }
+            }
+            h3{
+              font-size:16px;
+            }
+          }
+        }
+      }
+    }
+    &.email-template{
+      width:50%;
+      .pop-up-content{
+        input[type="submit"]{
+          font-size:12px;
+          padding:5px 10px;
+          margin:0;
+        }
+        li{
+          padding:0 !important;
+          margin:5px 0;
+        }
+        h5{
+          font-size:15px;
+          margin-top:10px;
+        }
+        .user-details, .invite-friends{
+          input{
+            padding:5px 10px;
+            font-size:13px;
+            border-width: 1px;
+            margin-top:0;
+            margin-bottom:5px;
+          }
+        }
+      }
+    }
+  }
+  .not-found .not-found-center{
+    img{
+      width:100px;
+      margin-bottom:5%;
+    }
+    h3{
+      font-size:27px;
+      line-height:100%;
+    }
+    a h3{
+      margin-top:5%;
+    }
+  }
+}
+
+@media only screen and (width:1366px) and (max-height: 653px){
+  nav ul li.left-days>div.payday-status{
+    margin-top:10px;
+  }
+  nav ul li.left-days>div.menu-subtitle{
+    margin-top:10px;
+  }
+  nav>ul>li{
+    padding:3% 10px;
+  }
+  .overlay .pop-up.take-action{
+    width:50%;
+  }
+  .win-lose-scene>div .button-bottom .each-button{
+    min-height: 200px;
+  }
+}
+
+@media only screen and (max-width: 1300px){
+  .home {
+    .language-button{
+      top:10px;
+      right:15px;
+      a{
+        font-size:20px;
+      }
+    }
+    h1{
+      font-size:50px;
+    }
+    h2{
+      font-size:25px;
+      margin-bottom:20px;
+      &.small{
+        font-size:19px;
+      }
+    }
+    img{
+      width:150px;
+      margin-bottom:20px;
+    }
+    .select-custom{
+      width:400px;
+      .select-options-content{
+        width: 330px;
+        ul.open{
+          height: 155px;
+        }
+        >h3 i{
+          top:7px;
+          font-size:30px;
+        }
+      }
+      .select-option-play{
+        width:70px;
+      }
+      h3{
+        font-size:20px;
+      }
+    }
+  }
+  .city{
+    .box-city{
+      width:700px;
+      .upper-icon{
+        width:120px;
+      }
+      h1{
+        font-size:55px;
+      }
+      h4{
+        font-size:30px;
+        margin:15px 0;
+      }
+      .buttons-content{
+        margin-bottom:20px;
+        .btn{
+          font-size:27px;
+          padding:15px 0;
+        }
+      }
+    }
+  }
+  .scenario>div{
+    h1{
+      font-size:40px;
+      margin-top:30px;
+      margin-bottom:30px;
+    }
+    .each-box {
+      width: 250px;
+      padding:50px;
+      &:hover {
+        .icon-box {
+          height: 250px;
+        }
+        h3 {
+          font-size: ptp(25);
+        }
+      }
+      .icon-box {
+        height: 150px;
+      }
+    }
+    .button-border{
+      margin-top:15px;
+      padding:10px 25px;
+      font-size:20px;
+    }
+    h3{
+      font-size:20px;
+      margin-top:15px;
+    }
+  }
+  .scenario--single >div{
+    .title-content{
+      img{
+        width:150px;
+      }
+      h3{
+        font-size:18px;
+        margin-bottom:25px;
+      }
+    }
+    p{
+      font-size:25px;
+    }
+    .button-box{
+      padding:10px 25px;
+      font-size:25px;
+    }
+    .reload-button{
+      font-size:15px;
+    }
+  }
+  footer li a{
+    font-size:13pt;
+  }
+  .scenario--rent{
+    h2{
+      font-size:22px;
+      line-height:110%;
+    }
+    .rent-scene--up{
+      p{
+        font-size:18px;
+      }
+      h3{
+        font-size:45px;
+        margin-top:0;
+      }
+    }
+    .rent-scene--down{
+      margin:25px 0 40px;
+      .col3{
+        &.has-slider{
+          .slider .dragger{
+            width:60px;
+            height:60px;
+          }
+        }
+        h4{
+          font-size:27px;
+        }
+      }
+    }
+  }
+  .button-box{
+    padding:10px 30px;
+    font-size:25px;
+    line-height: 100%;
+  }
+  .question-ask > div{
+    img{
+      width:100px;
+    }
+    h2{
+      font-size:30px;
+    }
+    h4{
+      font-size:20px;
+      margin:15px 0 30px;
+    }
+    .answers-content{
+      .answer-box>div{
+        .number{
+          width:35px;
+          height:35px;
+          top:-17px;
+          margin-left:-17px;
+          h3{
+            font-size:25px;
+            line-height:35px;
+          }
+        }
+        >h3{
+          font-size:16px;
+        }
+      }
+    }
+  }
+  .question-answer > div .consequence-box{
+    padding:20px 20px 60px;
+    h4{
+      font-size:18px;
+    }
+    h2{
+      font-size:23px;
+      margin-bottom:15px;
+    }
+    .button-answer{
+      bottom:10px;
+      h3{
+        font-size:20px;
+      }
+    }
+  }
+  .donate-scene > div{
+    img{
+      width:80px;
+    }
+    h1{
+      font-size:35px;
+    }
+    h2{
+      font-size:20px;
+    }
+    .buttons-bottom{
+      margin-top:40px;
+      a{
+        font-size:20px;
+        padding:10px 0;
+        width:160px;
+      }
+    }
+  }
+  .win-lose-scene > div{
+    h1{
+      font-size:30px;
+      margin-bottom:15px;
+    }
+    h3{
+      font-size:18px;
+    }
+    ul li h3{
+      font-size:18px;
+      span{
+        width:5px;
+        height:5px;
+      }
+    }
+    .button-bottom .each-button{
+      min-height: 160px;
+      >div{
+        &.social-icons>div{
+          padding:0 15px;
+          margin-bottom:10px;
+          a{
+            width:40px;
+            height:40px;
+            font-size:30px;
+            i{
+              line-height:40px;
+              font-size:27px;
+            }
+          }
+        }
+        img{
+          width:50px;
+        }
+      }
+    }
+  }
+  nav{
+    width:210px;
+    ul li{
+      &.left-days>div{
+        &.menu-title{
+          font-size:18px;
+        }
+        &.payday-status{
+          font-size:25px;
+          margin-top:3px;
+        }
+        &.flip-clock-wrapper:after{
+          width:80%;
+          margin-left:-40%;
+        }
+        &.menu-subtitle{
+          font-size:14px;
+        }
+      }
+      &.left-buget>div{
+        &.buget-animate{
+          width:45px;
+          height:45px;
+          margin-top:5px;
+          div{
+            font-size:40px;
+            line-height:43px;
+          }
+        }
+        &.menu-subtitle{
+          font-size:14px;
+        }
+      }
+      .menu-title{
+        font-size:16px;
+      }
+    }
+  }
+  .flip-clock-wrapper ul{
+    height:80px;
+    li a div{
+      &.up:after{
+        top:37px;
+      }
+      div.inn{
+        font-size:80px;
+        line-height: 90%;
+      }
+    }
+  }
+  .overlay .pop-up{
+    .pop-up-container{
+      >h2{
+        font-size:20px;
+      }
+      .pop-up-content{
+        li{
+          padding-left:10px;
+          font-size:12px;
+        }
+        h1{
+          font-size:35px;
+        }
+        h2{
+          font-size:27px;
+        }
+        h3{
+          font-size:23px;
+        }
+        h4{
+          font-size:19px;
+        }
+        h5{
+          font-size:12px
+        }
+        p{
+          font-size:13px;
+        }
+      }
+    }
+    .close-pop-up{
+      font-size:25px;
+    }
+    &.take-action{
+      width:70%;
+      .pop-up-container .pop-up-content{
+        .take-action-content{
+          h2{
+            font-size:25px;
+            margin:13px 0;
+          }
+          p{
+            font-size:14px;
+          }
+          img{
+            width:65px;
+          }
+        }
+        .take-action-share{
+          padding:20px 10%;
+          .col4{
+            .icon-social{
+              i{
+                font-size:35px;
+              }
+            }
+            h3{
+              font-size:18px;
+            }
+          }
+        }
+      }
+    }
+    &.email-template{
+      width:50%;
+      .pop-up-content{
+        input[type="submit"]{
+          font-size:13px;
+          padding:5px 10px;
+          margin:0;
+        }
+        li{
+          padding:0 !important;
+          margin:5px 0;
+        }
+        h5{
+          font-size:15px;
+          margin-top:10px;
+        }
+        .user-details, .invite-friends{
+          input{
+            padding:5px 10px;
+            font-size:13px;
+            border-width: 1px;
+            margin-top:0;
+            margin-bottom:5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-height:600px){
+  .home .select-custom .select-options-content ul.open{
+    height:150px;
+  }
+  .city .box-city{
+    .upper-icon{
+      width:100px;
+      top:-50px;
+    }
+  }
+  .scenario--single >div{
+    .title-content{
+      img{
+        width:130px;
+      }
+      h3{
+        font-size:16px;
+        margin-bottom:20px;
+      }
+    }
+    p{
+      font-size:23px;
+    }
+    .button-box{
+      padding:10px 25px;
+      font-size:23px;
+    }
+    .reload-button{
+      font-size:12px;
+    }
+  }
+  .scenario--rent{
+    h2{
+      font-size:20px;
+      line-height:110%;
+      margin-bottom:20px;
+      padding-bottom:20px;
+    }
+    .rent-scene--up{
+      img{
+        width:65%;
+      }
+    }
+    .rent-scene--down{
+      margin:20px 0 35px;
+      .col3{
+        &.has-slider{
+          .slider .dragger{
+            width:60px;
+            height:60px;
+          }
+        }
+        h4{
+          font-size:25px;
+        }
+      }
+    }
+  }
+  .question-ask > div{
+    img{
+      width:90px;
+    }
+    h2{
+      font-size:27px;
+    }
+    h4{
+      font-size:16px;
+      margin:15px 0 25px;
+    }
+    .answers-content{
+      .answer-box>div{
+        .number{
+          width:30px;
+          height:30px;
+          top:-15px;
+          margin-left:-15px;
+          h3{
+            font-size:20px;
+            line-height:30px;
+          }
+        }
+        >h3{
+          font-size:14px;
+        }
+      }
+    }
+  }
+  .question-answer > div .consequence-box{
+    padding:20px 20px 60px;
+    h4{
+      font-size:15px;
+    }
+    h2{
+      font-size:20px;
+      margin-bottom:15px;
+    }
+    .button-answer{
+      bottom:10px;
+      h3{
+        font-size:15px;
+      }
+    }
+  }
+  .win-lose-scene > div{
+    h1{
+      font-size:27px;
+      margin-bottom:15px;
+    }
+    h3{
+      font-size:15px;
+    }
+    ul li h3{
+      font-size:15px;
+    }
+    .button-bottom .each-button{
+      min-height: 150px;
+      >div{
+        &.social-icons>div{
+          padding:0 20px;
+          margin-bottom:10px;
+          a{
+            width:35px;
+            height:35px;
+            font-size:30px;
+            margin: 10px 5px 0;
+            i{
+              line-height:35px;
+              font-size:20px;
+            }
+          }
+        }
+        img{
+          width:45px;
+        }
+      }
+    }
+  }
+  nav{
+    width:180px;
+    ul{
+      border-right-width: 2px;
+      li{
+        border-bottom-width: 2px;
+        &.left-days>div{
+          &.menu-title{
+            font-size:16px;
+          }
+          &.payday-status{
+            font-size:25px;
+            margin-top:5px;
+          }
+          &.menu-subtitle{
+            font-size:12px;
+          }
+        }
+        &.left-buget>div{
+          &.buget-animate{
+            width:40px;
+            height:40px;
+            div{
+              font-size:35px;
+              line-height:38px;
+            }
+          }
+          &.remain-buget{
+            span{
+              font-size:50px;
+              line-height: 55px;
+              &.dolar-sign{
+                font-size:25px;
+                top:-15px;
+              }
+            }
+          }
+          &.menu-subtitle{
+            font-size:12px;
+          }
+        }
+        .menu-title{
+          font-size:15px;
+        }
+      }
+    }
+  }
+  .overlay .pop-up{
+    .pop-up-container{
+      >h2{
+        font-size:20px;
+      }
+      .pop-up-content{
+        li{
+          padding-left:10px;
+          font-size:12px;
+        }
+        h1{
+          font-size:35px;
+        }
+        h2{
+          font-size:27px;
+        }
+        h3{
+          font-size:23px;
+        }
+        h4{
+          font-size:19px;
+        }
+        h5{
+          font-size:12px
+        }
+        p{
+          font-size:13px;
+        }
+      }
+    }
+    .close-pop-up{
+      font-size:25px;
+    }
+    &.take-action{
+      width:70%;
+      .pop-up-container .pop-up-content{
+        .take-action-content{
+          h2{
+            font-size:20px;
+            margin:13px 0;
+          }
+          p{
+            font-size:14px;
+          }
+          img{
+            width:45px;
+          }
+        }
+        .take-action-share{
+          padding:20px 10%;
+          .col4{
+            .icon-social{
+              i{
+                font-size:35px;
+              }
+            }
+            h3{
+              font-size:18px;
+            }
+          }
+        }
+      }
+    }
+    &.email-template{
+      width:50%;
+      .pop-up-content{
+        input[type="submit"]{
+          font-size:13px;
+          padding:5px 10px;
+          margin:0;
+        }
+        li{
+          padding:0 !important;
+          margin:5px 0;
+        }
+        h5{
+          font-size:15px;
+          margin-top:10px;
+        }
+        .user-details, .invite-friends{
+          input{
+            padding:5px 10px;
+            font-size:13px;
+            border-width: 1px;
+            margin-top:0;
+            margin-bottom:5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px){
+  footer li  a{
+    font-size:11pt;
+  }
+}
+
+@media only screen and (max-height:600px){
+  .payday-loader .buget-animate {
+    width: 200px;
+    height: 200px;
+    div {
+      font-size: ptp(200);
+      line-height: 190px;
+    }
+  }
+}
+
+@media only screen and (max-width:600px){
+  .payday-loader .buget-animate {
+    width: 200px;
+    height: 200px;
+    div {
+      font-size: ptp(200);
+      line-height: 190px;
+    }
+  }
+  .not-found .not-found-center{
+    min-width: 90%;
+    max-width: 90%;
+    img{
+      width:80px;
+      margin-bottom:5%;
+    }
+    h3{
+      font-size:20px;
+      line-height:100%;
+    }
+    a h3{
+      margin-top:5%;
+    }
+  }
+}
+
+@media only screen and (max-height: 540px) and (orientation: landscape){
+  .home {
+    .language-button{
+      top:10px;
+      right:15px;
+      a{
+        font-size:15px;
+      }
+    }
+    h1{
+      font-size:40px;
+    }
+    h2{
+      font-size:20px;
+      margin-bottom:15px;
+      &.small{
+        font-size:14px;
+      }
+    }
+    img{
+      width:100px;
+      margin-bottom:15px;
+    }
+    .select-custom{
+      width:400px;
+      .select-options-content{
+        width: 330px;
+        ul.open{
+          height: 145px;
+        }
+        >h3 i{
+          top:7px;
+          font-size:25px;
+        }
+      }
+      .select-option-play{
+        width:70px;
+      }
+      h3{
+        font-size:15px;
+      }
+    }
+  }
+  .city{
+    .box-city{
+      width:600px;
+      .upper-icon{
+        width:100px;
+        top:-45px;
+      }
+      h1{
+        font-size:40px;
+      }
+      h4{
+        font-size:20px;
+        margin:15px 0;
+      }
+      .buttons-content{
+        margin-bottom:20px;
+        margin-top:20px;
+        .btn{
+          font-size:22px;
+          padding:10px 0;
+        }
+      }
+    }
+  }
+  .scenario>div{
+    h1{
+      font-size:35px;
+      margin-top:20px;
+      margin-bottom:20px;
+    }
+    .each-box {
+      width: 200px;
+      padding:30px;
+      &:hover {
+        .icon-box {
+          height: 200px;
+        }
+        h3 {
+          font-size: ptp(20);
+        }
+      }
+      .icon-box {
+        height: 140px;
+      }
+    }
+    .button-border{
+      margin-top:10px;
+      padding:10px 20px;
+      font-size:20px;
+    }
+    h3{
+      font-size:15px;
+      margin-top:15px;
+    }
+  }
+  .scenario--single >div{
+    .title-content{
+      img{
+        width:100px;
+      }
+      h3{
+        font-size:15px;
+      }
+    }
+    p{
+      font-size:20px;
+    }
+    .button-box{
+      padding:5px 20px;
+      font-size:20px;
+    }
+    .reload-button{
+      font-size:13px;
+    }
+  }
+  .scenario--rent{
+    h2{
+      font-size:15px;
+      line-height:110%;
+    }
+    .rent-scene--up{
+      p{
+        font-size:15px;
+      }
+      h3{
+        font-size:35px;
+        margin-top:0;
+      }
+      .col3.has-border{
+        border-width:0 2px;
+      }
+    }
+    .rent-scene--down{
+      margin:10px 0 20px;
+      .col3{
+        &.has-slider{
+          .slider .dragger{
+            width:40px;
+            height:40px;
+          }
+        }
+        h4{
+          font-size:20px;
+        }
+      }
+    }
+  }
+  .button-box{
+    padding:5px 20px;
+    font-size:16px;
+    line-height: 100%;
+  }
+  .question-ask > div{
+    img{
+      width:80px;
+    }
+    h2{
+      font-size:25px;
+    }
+    h4{
+      font-size:15px;
+      margin:10px 0 25px;
+    }
+    .answers-content{
+      .answer-box>div{
+        .number{
+          width:25px;
+          height:25px;
+          top:-13px;
+          margin-left:-13px;
+          h3{
+            font-size:20px;
+            line-height:25px;
+          }
+        }
+        >h3{
+          font-size:14px;
+        }
+      }
+    }
+  }
+  .question-answer > div .consequence-box{
+    padding:20px 20px 60px;
+    h4{
+      font-size:14px;
+    }
+    h2{
+      font-size:20px;
+      margin-bottom:15px;
+    }
+    .button-answer{
+      bottom:10px;
+      h3{
+        font-size:16px;
+      }
+    }
+  }
+  .donate-scene > div{
+    img{
+      width:70px;
+    }
+    h1{
+      font-size:30px;
+    }
+    h2{
+      font-size:17px;
+    }
+    .buttons-bottom{
+      margin-top:30px;
+      a{
+        font-size:17px;
+        padding:10px 0;
+        width:140px;
+      }
+    }
+  }
+  .win-lose-scene > div{
+    h1{
+      font-size:23px;
+      margin-bottom:10px;
+    }
+    h3{
+      font-size:14px;
+    }
+    ul li h3{
+      font-size:14px;
+      span{
+        width:5px;
+        height:5px;
+      }
+    }
+    .button-bottom{
+      margin:15px 0 20px;
+      .each-button{
+        min-height: 120px;
+        >div{
+          &.social-icons{
+            padding-top:0;
+            >div{
+              padding:0 15px;
+              margin-bottom:5px;
+              margin-top:0;
+              a{
+                width:30px;
+                height:30px;
+                float:left;
+                margin:10px 10px 0;
+                i{
+                  line-height:30px;
+                  font-size:20px;
+                }
+              }
+            }
+          }
+          h3{
+            padding:10px 3%;
+          }
+          img{
+            width:40px;
+          }
+        }
+      }
+    }
+  }
+  nav{
+    width:150px;
+    ul{
+      border-right-width: 1px;
+      li{
+        border-bottom-width: 1px;
+        &.left-days>div{
+          &.menu-title{
+            font-size:14px;
+          }
+          &.payday-status{
+            font-size:20px;
+            margin-top:5px;
+          }
+          &.menu-subtitle{
+            font-size:11px;
+          }
+        }
+        &.left-buget>div{
+          &.buget-animate{
+            width:30px;
+            height:30px;
+            div{
+              font-size:25px;
+              line-height:28px;
+            }
+          }
+          &.remain-buget{
+            span{
+              font-size:40px;
+              line-height: 45px;
+              &.dolar-sign{
+                font-size: 15px;
+                top: -15px;
+                line-height: 100%;
+              }
+            }
+          }
+          &.menu-subtitle{
+            font-size:11px;
+          }
+        }
+        .menu-title{
+          font-size:14px;
+        }
+      }
+    }
+  }
+  .overlay .pop-up{
+    height:80%;
+    .pop-up-container{
+      >h2{
+        font-size:15px;
+      }
+      .pop-up-content{
+        li{
+          padding-left:5px;
+          font-size:11px;
+        }
+        h1{
+          font-size:33px;
+        }
+        h2{
+          font-size:25px;
+        }
+        h3{
+          font-size:22px;
+        }
+        h4{
+          font-size:15px;
+        }
+        h5{
+          font-size:10px
+        }
+        p{
+          font-size:12px;
+        }
+      }
+    }
+    .close-pop-up{
+      font-size:20px;
+    }
+    &.take-action{
+      width:70%;
+      .pop-up-container .pop-up-content{
+        .take-action-content{
+          h2{
+            font-size:20px;
+            margin:13px 0;
+          }
+          p{
+            font-size:14px;
+          }
+          img{
+            width:45px;
+          }
+        }
+        .take-action-share{
+          padding:20px 10%;
+          .col4{
+            .icon-social{
+              i{
+                font-size:35px;
+              }
+            }
+            h3{
+              font-size:18px;
+            }
+          }
+        }
+      }
+    }
+    &.email-template{
+      width:50%;
+      .pop-up-content{
+        input[type="submit"]{
+          font-size:13px;
+          padding:5px 10px;
+          margin:0;
+        }
+        li{
+          padding:0 !important;
+          margin:5px 0;
+        }
+        h5{
+          font-size:15px;
+          margin-top:10px;
+        }
+        .user-details, .invite-friends{
+          input{
+            padding:5px 10px;
+            font-size:13px;
+            border-width: 1px;
+            margin-top:0;
+            margin-bottom:5px;
+          }
+        }
+      }
+    }
+  }
+  footer{
+    >ul{
+      display:none;
+    }
+    .mobile-footer{
+      display:block;
+    }
+  }
+}
+
+@media only screen and (max-width: 959px){
+  .home {
+    .language-button{
+      top:10px;
+      right:15px;
+      a{
+        font-size:15px;
+      }
+    }
+    h1{
+      font-size:40px;
+    }
+    h2{
+      font-size:20px;
+      margin-bottom:15px;
+      &.small{
+        font-size:14px;
+      }
+    }
+    img{
+      width:100px;
+      margin-bottom:15px;
+    }
+    .select-custom{
+      width:400px;
+      .select-options-content{
+        width: 330px;
+        ul.open{
+          height: 145px;
+        }
+        >h3 i{
+          top:7px;
+          font-size:30px;
+        }
+      }
+      .select-option-play{
+        width:70px;
+      }
+      h3{
+        font-size:15px;
+      }
+    }
+  }
+  .city{
+    .box-city{
+      width:600px;
+      .upper-icon{
+        width:100px;
+        top:-45px;
+      }
+      h1{
+        font-size:40px;
+      }
+      h4{
+        font-size:20px;
+        margin:15px 0;
+      }
+      .buttons-content{
+        margin-bottom:20px;
+        margin-top:20px;
+        .btn{
+          font-size:22px;
+          padding:10px 0;
+        }
+      }
+    }
+  }
+  .scenario>div{
+    h1{
+      font-size:35px;
+      margin-top:20px;
+      margin-bottom:20px;
+    }
+    .each-box {
+      width: 200px;
+      padding:30px;
+      &:hover {
+        .icon-box {
+          height: 200px;
+        }
+        h3 {
+          font-size: ptp(20);
+        }
+      }
+      .icon-box {
+        height: 140px;
+      }
+    }
+    .button-border{
+      margin-top:10px;
+      padding:10px 20px;
+      font-size:20px;
+    }
+    h3{
+      font-size:15px;
+      margin-top:15px;
+    }
+  }
+  .scenario--single >div{
+    .title-content{
+      img{
+        width:100px;
+      }
+      h3{
+        font-size:15px;
+      }
+    }
+    p{
+      font-size:20px;
+    }
+    .button-box{
+      padding:5px 20px;
+      font-size:20px;
+    }
+    .reload-button{
+      font-size:13px;
+    }
+  }
+  .scenario--rent{
+    h2{
+      font-size:15px;
+      line-height:110%;
+    }
+    .rent-scene--up{
+      p{
+        font-size:15px;
+      }
+      h3{
+        font-size:35px;
+        margin-top:0;
+      }
+      .col3.has-border{
+        border-width:0 2px;
+      }
+    }
+    .rent-scene--down{
+      margin:10px 0 20px;
+      .col3{
+        &.has-slider{
+          .slider .dragger{
+            width:40px;
+            height:40px;
+          }
+        }
+        h4{
+          font-size:20px;
+        }
+      }
+    }
+  }
+  .button-box{
+    padding:5px 20px;
+    font-size:16px;
+    line-height: 100%;
+  }
+  .question-ask > div{
+    img{
+      width:80px;
+    }
+    h2{
+      font-size:25px;
+    }
+    h4{
+      font-size:15px;
+      margin:10px 0 25px;
+    }
+    .answers-content{
+      .answer-box>div{
+        .number{
+          width:25px;
+          height:25px;
+          top:-13px;
+          margin-left:-13px;
+          h3{
+            font-size:20px;
+            line-height:25px;
+          }
+        }
+        >h3{
+          font-size:14px;
+        }
+      }
+    }
+  }
+  .question-answer > div .consequence-box{
+    padding:20px 20px 60px;
+    h4{
+      font-size:14px;
+    }
+    h2{
+      font-size:20px;
+      margin-bottom:15px;
+    }
+    .button-answer{
+      bottom:10px;
+      h3{
+        font-size:16px;
+      }
+    }
+  }
+  .donate-scene > div{
+    img{
+      width:70px;
+    }
+    h1{
+      font-size:30px;
+    }
+    h2{
+      font-size:17px;
+    }
+    .buttons-bottom{
+      margin-top:30px;
+      a{
+        font-size:17px;
+        padding:10px 0;
+        width:140px;
+      }
+    }
+  }
+  .win-lose-scene > div{
+    h1{
+      font-size:23px;
+      margin-bottom:10px;
+    }
+    h3{
+      font-size:14px;
+    }
+    ul li h3{
+      font-size:14px;
+      span{
+        width:5px;
+        height:5px;
+      }
+    }
+    .button-bottom{
+      margin:15px 0 20px;
+      .each-button{
+        min-height: 120px;
+        >div{
+          &.social-icons{
+            padding-top:0;
+            >div{
+              padding:0 15px;
+              margin-bottom:5px;
+              margin-top:0;
+              a{
+                width:30px;
+                height:30px;
+                float:left;
+                margin:10px 10px 0;
+                i{
+                  line-height:30px;
+                  font-size:20px;
+                }
+              }
+            }
+          }
+          h3{
+            padding:10px 3%;
+          }
+          img{
+            width:40px;
+          }
+        }
+      }
+    }
+  }
+  nav{
+    width:150px;
+    ul{
+      border-right-width: 1px;
+      li{
+        border-bottom-width: 1px;
+        &.left-days>div{
+          &.menu-title{
+            font-size:14px;
+          }
+          &.payday-status{
+            font-size:20px;
+            margin-top:5px;
+          }
+          &.menu-subtitle{
+            font-size:11px;
+          }
+        }
+        &.left-buget>div{
+          &.buget-animate{
+            width:30px;
+            height:30px;
+            div{
+              font-size:25px;
+              line-height:28px;
+            }
+          }
+          &.remain-buget{
+            span{
+              font-size:40px;
+              line-height: 45px;
+              &.dolar-sign{
+                font-size: 15px;
+                top: -15px;
+                line-height: 100%;
+              }
+            }
+          }
+          &.menu-subtitle{
+            font-size:11px;
+          }
+        }
+        .menu-title{
+          font-size:14px;
+        }
+      }
+    }
+  }
+  .overlay .pop-up{
+    height:80%;
+    .pop-up-container{
+      >h2{
+        font-size:15px;
+      }
+      .pop-up-content{
+        li{
+          padding-left:5px;
+          font-size:11px;
+        }
+        h1{
+          font-size:33px;
+        }
+        h2{
+          font-size:25px;
+        }
+        h3{
+          font-size:22px;
+        }
+        h4{
+          font-size:15px;
+        }
+        h5{
+          font-size:10px
+        }
+        p{
+          font-size:12px;
+        }
+      }
+    }
+    .close-pop-up{
+      font-size:20px;
+    }
+    &.take-action{
+      width:70%;
+      .pop-up-container .pop-up-content{
+        .take-action-content{
+          h2{
+            font-size:20px;
+            margin:13px 0;
+          }
+          p{
+            font-size:14px;
+          }
+          img{
+            width:45px;
+          }
+        }
+        .take-action-share{
+          padding:20px 10%;
+          .col4{
+            .icon-social{
+              i{
+                font-size:35px;
+              }
+            }
+            h3{
+              font-size:18px;
+            }
+          }
+        }
+      }
+    }
+    &.email-template{
+      width:50%;
+      .pop-up-content{
+        input[type="submit"]{
+          font-size:13px;
+          padding:5px 10px;
+          margin:0;
+        }
+        li{
+          padding:0 !important;
+          margin:5px 0;
+        }
+        h5{
+          font-size:15px;
+          margin-top:10px;
+        }
+        .user-details, .invite-friends{
+          input{
+            padding:5px 10px;
+            font-size:13px;
+            border-width: 1px;
+            margin-top:0;
+            margin-bottom:5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:859px){
+  .home {
+    .select-custom{
+      width:300px;
+      .select-options-content{
+        width: 240px;
+        ul.open{
+          height: 145px;
+        }
+        ul li h3{
+          padding:10px 0;
+        }
+        >h3 i{
+          top:7px;
+          font-size:20px;
+          right:10px;
+        }
+      }
+      .select-option-play{
+        width:60px;
+      }
+      h3{
+        font-size:15px;
+        padding:10px 0;
+      }
+    }
+  }
+  .city{
+    .box-city{
+      width:500px;
+      padding:0 30px;
+      .upper-icon{
+        width:80px;
+        top:-40px;
+      }
+      h1{
+        font-size:30px;
+        margin-top:20px;
+      }
+      h4{
+        font-size:15px;
+        margin:10px 0;
+      }
+      .buttons-content{
+        margin-bottom:15px;
+        margin-top:15px;
+        .btn{
+          font-size:15px;
+          padding:10px 0;
+        }
+      }
+    }
+  }
+  footer li a{
+    font-size:10pt;
+  }
+  .win-lose-scene>div .button-bottom .each-button>div.social-icons>div{
+    padding:0 10px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .scenario>div{
+    h1{
+      font-size:35px;
+      margin-top:20px;
+      margin-bottom:20px;
+    }
+    .each-box {
+      width: 180px;
+      padding:10px;
+      &:hover {
+        .icon-box {
+          height: 180px;
+        }
+        h3 {
+          font-size: ptp(17);
+        }
+      }
+      .icon-box {
+        height: 170px;
+      }
+    }
+    .button-border{
+      margin-top:10px;
+      padding:10px 20px;
+      font-size:20px;
+    }
+    h3{
+      font-size:13px;
+      margin-top:15px;
+    }
+  }
+  footer li a {
+    font-size:9pt;
+  }
+  .win-lose-scene>div .button-bottom .each-button>div.social-icons>div a{
+    margin:10px 8px 0;
+  }
+}
+
+@media only screen and (height: 720px) and (width: 720px){
+  nav>ul>li{
+    padding:5% 10px;
+  }
+}
+
+@media only screen and (max-width: 719px) and (orientation: landscape){
+  .home .select-options, .home [data-show]{
+    display:none;
+  }
+  .home .mobile-select{
+    display:block;
+    padding:8px 50px;
+    &:focus{
+      outline:0;
+    }
+  }
+  .home .select-custom{
+    display:inline-block;
+    background-color:#fff;
+  }
+  .city .box-city hr {
+    height: 1px;
+  }
+  .scenario>div{
+    h1{
+      font-size:30px;
+      margin-top:0;
+      margin-bottom:20px;
+    }
+    .each-box {
+      width: 170px;
+      padding:20px;
+      &:hover {
+        .icon-box {
+          height: 170px;
+        }
+      }
+      .icon-box {
+        height: 130px;
+      }
+    }
+    .button-border{
+      margin-top:10px;
+      padding:5px 20px;
+      font-size:15px;
+    }
+    h3{
+      font-size:13px;
+      margin-top:10px;
+    }
+  }
+  .content{
+    float:left;
+    width:100%;
+    section{
+      width:100% !important;
+    }
+  }
+  footer{
+    width:100% !important;
+  }
+  nav{
+    height:auto!important;
+    width:100%;
+    >ul{
+      border-width: 0 0 1px;
+      border-style:solid;
+      border-color: #fff;
+      >li{
+        padding:0;
+        border:0 none;
+        &.left-days{
+          width:20%;
+          > div.flip-clock-wrapper::after{
+            display:none;
+          }
+        }
+        &.left-buget{
+          width:26%;
+          float: right;
+          > div.remain-buget span{
+            font-size:55px;
+            line-height:60px;
+            &.dolar-sign{
+              font-size:25px;
+              top:-20px;
+            }
+          }
+          > div.menu-subtitle{
+            font-size:13px;
+            margin-top:5px;
+          }
+        }
+        &.stress{
+          width:20%;
+          .menu-title{
+            font-size:13px;
+            margin:-3px 0 0;
+          }
+          img{
+            max-width: 80%;
+          }
+        }
+        &.deferred{
+          width: 27%;
+          svg{
+            margin:5px 5px 0;
+            width:15%;
+          }
+        }
+      }
+    }
+  }
+  .flip-clock-wrapper ul{
+    height:70px;
+    li a div{
+      &.up:after{
+        top:30px;
+      }
+      div.inn{
+        font-size:70px;
+      }
+    }
+  }
+  .scenario--single >div{
+    .title-content{
+      img{
+        width:80px;
+      }
+      h3{
+        font-size:13px;
+      }
+    }
+    p{
+      font-size:17px;
+    }
+    .button-box{
+      padding:5px 20px;
+      font-size:17px;
+      margin:10px 0 15px;
+    }
+    .reload-button{
+      font-size:13px;
+    }
+  }
+  .scenario--rent{
+    h2{
+      font-size:13px;
+      line-height:110%;
+      border-bottom-width: 1px;
+    }
+    .rent-scene--up{
+      p{
+        font-size:13px;
+      }
+      h3{
+        font-size:30px;
+        margin-top:0;
+      }
+      .col3.has-border{
+        border-width:0 1px;
+        padding-top:0;
+        padding-bottom:0;
+      }
+      img{
+        max-width: 45%;
+      }
+    }
+    .rent-scene--down{
+      margin:10px 0 20px;
+      .col3{
+        &.has-slider{
+          .slider .dragger{
+            width:40px;
+            height:40px;
+          }
+        }
+        h4{
+          font-size:20px;
+        }
+      }
+    }
+  }
+  .question-ask > div img {
+    width: 0;
+  }
+  .question-answer > div .consequence-box{
+    padding:20px 20px 60px;
+    h4{
+      font-size:12px;
+    }
+    h2{
+      font-size:18px;
+      margin-bottom:10px;
+    }
+    .button-answer{
+      bottom:10px;
+      h3{
+        font-size:16px;
+      }
+    }
+  }
+  .donate-scene > div{
+    img{
+      width:60px;
+    }
+    h1{
+      font-size:20px;
+    }
+    h2{
+      font-size:13px;
+    }
+    .buttons-bottom{
+      margin-top:30px;
+      a{
+        font-size:15px;
+        padding:10px 0;
+        width:130px;
+      }
+    }
+  }
+  .win-lose-scene > div{
+    h1{
+      font-size:18px;
+      margin-bottom:10px;
+    }
+    h3{
+      font-size:12px;
+    }
+    ul li h3{
+      font-size:12px;
+      span{
+        width:5px;
+        height:5px;
+      }
+    }
+    .reload-game h3{
+      margin:0;
+      padding:0;
+    }
+    .button-bottom{
+      margin:10px 0;
+      .each-button{
+        min-height: 120px;
+        >div{
+          &.social-icons{
+            padding-top:0;
+            >div{
+              padding:0 15px;
+              margin-bottom:5px;
+              margin-top:0;
+            }
+          }
+          h3{
+            padding:10px 3%;
+          }
+          img{
+            width:40px;
+          }
+        }
+      }
+    }
+  }
+  .overlay .pop-up .close-pop-up {
+    font-size: 15px;
+    padding: 5px;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media only screen and (max-height:479px) and (orientation: landscape){
+  .home .select-options, .home [data-show]{
+    display:none;
+  }
+  .home .mobile-select{
+    display:block;
+  }
+  .home .select-custom{
+    display:inline-block;
+    background-color:#fff;
+  }
+  .city .box-city{
+    .upper-icon {
+      display:none;
+    }
+    hr {
+      height: 1px;
+    }
+  }
+  .scenario>div{
+    h1{
+      font-size:30px;
+      margin-top:0;
+      margin-bottom:20px;
+    }
+    .each-box {
+      width: 170px;
+      padding:20px;
+      &:hover {
+        .icon-box {
+          height: 170px;
+        }
+      }
+      .icon-box {
+        height: 130px;
+      }
+    }
+    .button-border{
+      margin-top:10px;
+      padding:5px 20px;
+      font-size:15px;
+    }
+    h3{
+      font-size:13px;
+      margin-top:10px;
+    }
+  }
+  .content{
+    float:left;
+    width:100%;
+    section{
+      width:100% !important;
+    }
+  }
+  footer{
+    width:100% !important;
+  }
+  nav{
+    height:auto!important;
+    width:100%;
+    >ul{
+      border-width: 0 0 1px;
+      border-style:solid;
+      border-color: #fff;
+      >li{
+        padding:0;
+        border:0 none;
+        &.left-days{
+          width:20%;
+          > div.flip-clock-wrapper::after{
+            display:none;
+          }
+        }
+        &.left-buget{
+          width:26%;
+          > div.remain-buget span{
+            font-size:55px;
+            line-height:60px;
+            &.dolar-sign{
+              font-size:25px;
+              top:-20px;
+            }
+          }
+          > div.menu-subtitle{
+            font-size:13px;
+            margin-top:5px;
+          }
+        }
+        &.stress{
+          width:20%;
+          .menu-title{
+            font-size:13px;
+            margin:-3px 0 0;
+          }
+          img{
+            max-width: 80%;
+          }
+        }
+        &.deferred{
+          width: 27%;
+          svg{
+            margin:5px 5px 0;
+            width:15%;
+          }
+        }
+      }
+    }
+  }
+  .flip-clock-wrapper ul{
+    height:70px;
+    li a div{
+      &.up:after{
+        top:30px;
+      }
+      div.inn{
+        font-size:70px;
+      }
+    }
+  }
+  .scenario--single >div{
+    .title-content{
+      img{
+        width:80px;
+        display:none;
+      }
+      h3{
+        font-size:13px;
+      }
+    }
+    p{
+      font-size:15px;
+      min-height:0;
+    }
+    .button-box{
+      padding:5px 15px;
+      font-size:17px;
+      margin:10px 0 15px;
+    }
+    .reload-button{
+      font-size:13px;
+    }
+  }
+  .scenario--rent{
+    h2{
+      display:none;
+    }
+    .rent-scene--down{
+      margin-bottom:30px;
+      .col3{
+        &.has-slider .slider{
+          min-height: 40px !important;
+          .track{
+            height:60px;
+          }
+        }
+        h4{
+          line-height: 40px;
+        }
+      }
+    }
+  }
+  .question-ask > div {
+    h2{
+      font-size:18px;
+    }
+    h4{
+      font-size:12px;
+      margin:10px 0;
+    }
+    .answers-content .answer-box >{
+      width:27%;
+      div{
+        .number{
+          display:none;
+        }
+        >h3{
+          font-size:12px;
+        }
+      }
+    }
+  }
+  .question-answer > div .consequence-box{
+    padding:20px 20px 60px;
+    h4{
+      display:none;
+    }
+    hr{
+      display:none;
+    }
+    h2{
+      font-size:16px;
+      margin-bottom:10px;
+    }
+  }
+  .donate-scene > div{
+    img{
+      display:none;
+    }
+    h1{
+      font-size:18px;
+    }
+    h2{
+      font-size:12px;
+    }
+    .buttons-bottom{
+      margin-top:20px;
+      a{
+        font-size:12px;
+        padding:5px 0;
+        width:110px;
+      }
+    }
+  }
+  .win-lose-scene > div{
+    h1{
+      font-size:15px;
+      margin-bottom:10px;
+    }
+    h3{
+      font-size:12px;
+      span{
+        display:none;
+      }
+    }
+    ul{
+      display:none;
+    }
+    .reload-game h3{
+      margin:0;
+      padding:0;
+    }
+    .button-bottom{
+      margin:10px 0;
+      .each-button{
+        min-height: 90px;
+        >div{
+          &.social-icons{
+            padding-top:0;
+            >div{
+              padding:0 15px;
+              margin-bottom:5px;
+              margin-top:0;
+            }
+            h3{
+              display: none;
+            }
+          }
+          h3{
+            padding:10px 3%;
+          }
+          img{
+            display:none;
+          }
+        }
+      }
+    }
+  }
+  .overlay .pop-up .close-pop-up {
+    font-size: 15px;
+    padding: 5px;
+    right: 0;
+    top: 0;
+  }
+  .loader{
+    width:100px;
+    height:100px;
+    margin-top:-50px;
+    margin-left:-50px;
+  }
+}
+
+@media only screen and (max-width: 639px) and (orientation: landscape){
+  .home {
+    .language-button{
+      top:10px;
+      right:10px;
+      a{
+        font-size:10px;
+      }
+    }
+    h1{
+      font-size:30px;
+    }
+    h2{
+      font-size:15px;
+      margin-bottom:15px;
+      &.small{
+        font-size:12px;
+      }
+    }
+    .select-custom{
+      width:250px;
+      .select-options-content{
+        width: 190px;
+        .mobile-select{
+          font-size:12px;
+        }
+      }
+      .select-option-play{
+        width:60px;
+      }
+      h3{
+        font-size:12px;
+      }
+    }
+  }
+  .city .box-city {
+    max-width: 80%;
+    padding: 0 20px;
+  }
+  footer li{
+    padding: 0 5px;
+    a{
+      font-size:8pt;
+    }
+  }
+  .scenario>div{
+    h1{
+      font-size:25px;
+      margin-bottom:20px;
+    }
+    .each-box {
+      width: 130px;
+      margin:0;
+      padding:20px;
+      &:hover {
+        .icon-box {
+          height: 130px;
+        }
+      }
+      .icon-box {
+        height: 80px;
+      }
+    }
+    .button-border{
+      display:none;
+    }
+    h3{
+      margin-top:15px;
+    }
+  }
+  nav{;
+    >ul{
+      >li{
+        &.left-days{
+          width:20%;
+          > div.flip-clock-wrapper::after{
+            display:none;
+          }
+          div.menu-title{
+            display:none;
+          }
+        }
+        &.left-buget{
+          width:26%;
+          float:right;
+          > div.remain-buget span{
+            font-size:45px;
+            line-height:47px;
+            &.dolar-sign{
+              font-size:20px;
+              top:-15px;
+            }
+          }
+          > div.menu-subtitle{
+            font-size:11px;
+            margin-top:5px;
+          }
+        }
+        &.stress{
+          width:20%;
+          .menu-title{
+            font-size:11px;
+            margin:0;
+          }
+          img{
+            max-width: 80%;
+          }
+        }
+        &.deferred{
+          width: 27%;
+          svg{
+            margin:5px 5px 0;
+            width:15%;
+          }
+        }
+      }
+    }
+  }
+  .scenario--rent{
+    .rent-scene--up{
+      p{
+        font-size:11px;
+      }
+      h3{
+        font-size:27px;
+        margin-top:0;
+      }
+    }
+  }
+  .question-ask > div h4 {
+    display: none;
+  }
+  .win-lose-scene > div .button-bottom .each-button > div.social-icons > div {
+    margin-top: 0;
+    padding: 0 1px;
+  }
+  .win-lose-scene > div h1 {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-height: 359px) and (orientation: landscape){
+  body{
+    min-height:320px;
+  }
+  .scenario--single > div p {
+    font-size: 12px;
+  }
+  nav>ul>li.stress .menu-title{
+    margin:3px 0 0;
+  }
+}
+
+@media only screen and (max-height: 319px) and (orientation: landscape){
+  body{
+    min-height: 290px;
+  }
+  .content{
+    min-height: 180px;
+  }
+  .question-ask > div{
+    h2{
+      font-size:15px;
+    }
+    .answers-content{
+      .answer-box>div{
+        >h3{
+          font-size:10px;
+        }
+      }
+    }
+  }
+  .question-answer > div .consequence-box{
+    padding:10px 10px 30px;
+    h2{
+      font-size:13px;
+    }
+    .button-answer{
+      bottom:5px;
+      h3{
+        font-size:13px;
+      }
+    }
+  }
+  .donate-scene > div{
+    h1{
+      font-size:17px;
+    }
+    h2{
+      font-size:12px;
+    }
+    .buttons-bottom{
+      margin-top:10px;
+      a{
+        font-size:12px;
+        padding:10px 0;
+        width:100px;
+      }
+    }
+  }
+  .win-lose-scene>div{
+    >h3{
+      display:none;
+    }
+    .button-bottom .each-button>div.social-icons>div{
+      margin-top:-10px;
+      a{
+        float:none;
+        margin:0 5px;
+      }
+    }
+  }
+  nav{
+    >ul{
+      >li{
+        .menu-subtitle, .menu-title{
+          display:none;
+        }
+        &.left-buget{
+          > div.remain-buget span{
+            font-size:40px;
+            line-height:45px;
+            &.dolar-sign{
+              font-size:15px;
+              top:-10px;
+            }
+          }
+        }
+        &.stress{
+          width:20%;
+          img{
+            max-width: 75px;
+          }
+        }
+        &.deferred{
+          svg{
+            margin:5px 5px 0;
+            width:15%;
+          }
+        }
+      }
+    }
+  }
+  .flip-clock-wrapper ul{
+    height:50px;
+    li a div{
+      &.up:after{
+        top:23px;
+      }
+      div.inn{
+        font-size:50px;
+      }
+    }
+  }
+  .overlay .pop-up.take-action .pop-up-container .pop-up-content .take-action-content{
+    h2{
+      font-size:15px;
+    }
+    p{
+      display:none;
+    }
+    .col3{
+      padding:0;
+    }
+  }
+  .overlay .pop-up.take-action .pop-up-container .pop-up-content .take-action-share{
+    padding:10px 0;
+  }
+}
+
+@media only screen and (max-width: 640px) and (orientation: portrait){
+  .scenario>div{
+    .each-box {
+      width: 170px;
+      padding:20px;
+      margin:0;
+      &:hover {
+        .icon-box {
+          height: 170px;
+        }
+      }
+      .icon-box {
+        height: 130px;
+      }
+    }
+    .button-border{
+      margin-top:10px;
+      padding:5px 20px;
+      font-size:15px;
+    }
+    h3{
+      font-size:13px;
+      margin-top:10px;
+    }
+  }
+  .home .select-options, .home [data-show]{
+    display:none;
+  }
+  .home .mobile-select{
+    display:block;
+    padding:8px 50px;
+    &:focus{
+      outline:0;
+    }
+  }
+  .home .select-custom{
+    display:inline-block;
+    background-color:#fff;
+  }
+  footer{
+    position:fixed;
+    bottom:10px;
+  }
+  .question-answer>div .consequence-box{
+    min-height:50%;
+    height:auto;
+  }
+  nav{
+    height:auto!important;
+    width:100%;
+    >ul{
+      border-width: 0 0 1px;
+      border-style:solid;
+      border-color: #fff;
+      >li{
+        padding:0;
+        border:0 none;
+        &.left-days{
+          width:19%;
+          > div.flip-clock-wrapper::after{
+            display:none;
+          }
+        }
+        &.left-buget{
+          width:27%;
+          > div.remain-buget span{
+            font-size:55px;
+            line-height:60px;
+            &.dolar-sign{
+              font-size:25px;
+              top:-20px;
+            }
+          }
+          > div.menu-subtitle{
+            font-size:13px;
+            margin-top:5px;
+          }
+        }
+        &.stress{
+          width:20%;
+          .menu-title{
+            font-size:13px;
+            margin:-3px 0 0;
+          }
+          img{
+            max-width: 90%;
+          }
+        }
+        &.deferred{
+          width: 34%;
+          svg{
+            margin:5px 5px 0;
+            width:15%;
+          }
+        }
+      }
+    }
+  }
+  .content{
+    float:left;
+    width:100%;
+    section{
+      width:100% !important;
+    }
+  }
+  .home h1{
+    margin-top:100px;
+  }
+  footer{
+    >ul{
+      display:none;
+    }
+    .mobile-footer{
+      display:block;
+    }
+  }
+}
+
+@media only screen and (max-height: 940px) and (orientation: portrait){
+  .overlay .pop-up.take-action{
+    height:50%;
+  }
+  .overlay .pop-up.email-template{
+    height:45%;
+  }
+  .overlay .pop-up .close-pop-up{
+    top:0;
+    right:0;
+  }
+  .content{
+    min-height:600px;
+  }
+  .home>div{
+    top:40%;
+    @include transform(translateY(-50%));
+    h1{
+      margin-bottom:30px;
+    }
+    h2{
+      margin-bottom:30px;
+    }
+    img{
+      margin-bottom:30px;
+    }
+    .select-custom{
+      margin-top:30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 599px) and (orientation: portrait){
+  .city > .box-city{
+    max-width: 90%;
+  }
+  footer li{
+    padding:0 5px;
+  }
+  .scenario>div{
+    .each-box {
+      width: 200px;
+      padding:20px;
+      margin:0 50px;
+      &:hover {
+        .icon-box {
+          height: 200px;
+        }
+      }
+      .icon-box {
+        height: 160px;
+      }
+    }
+    .button-border{
+      display:none;
+    }
+    h3{
+      font-size:13px;
+      margin-top:10px;
+    }
+  }
+  .win-lose-scene>div .button-bottom .each-button{
+    min-height:140px;
+    width:35%;
+    margin:2%;
+    >div.social-icons>div{
+      margin-top:-5px;
+      margin-bottom:10px;
+      a{
+        float:none;
+        width:40px;
+        height:40px;
+        i{
+          line-height:40px;
+          font-size:27px;
+        }
+      }
+    }
+  }
+  nav>ul>li.stress{
+    img{
+      max-width: 100%;
+    }
+    .menu-title {
+      font-size: 11px;
+      margin: 10px 0 0;
+    }
+  }
+  nav>ul>li.left-buget>div.menu-subtitle{
+    font-size:11px;
+    margin-top:10px;
+  }
+  nav>ul>li.deferred svg{
+    margin:5px 5px 0;
+    width:15%;
+  }
+  nav>ul>li.left-buget>div.remain-buget span{
+    font-size:43px;
+    &.dolar-sign{
+      top:-13px;
+    }
+  }
+}
+
+@media only screen and (max-height: 799px) and (orientation: portrait){
+  .scenario>div{
+    h1{
+      font-size:30px;
+    }
+    .each-box {
+      width: 140px;
+      padding:5px;
+      margin:0;
+      &:hover {
+        .icon-box {
+          height: 140px;
+        }
+      }
+      .icon-box {
+        height: 130px;
+      }
+    }
+    .button-border{
+      display:none;
+    }
+    h3{
+      font-size:13px;
+      margin-top:10px;
+    }
+  }
+  .content{
+    min-height:500px;
+  }
+  .question-ask>div {
+    @include transform(translateY(0));
+    top:10px;
+    max-height:500px;
+    overflow-y: scroll;
+    .answers-content .answer-box{
+      width:90%;
+      margin:0 5% 5%;
+      max-height:100px;
+    }
+  }
+  .question-ask>div{
+    padding:0;
+  }
+  .win-lose-scene>div{
+    >h3{
+      display:none;
+    }
+    ul{
+      display:none;
+    }
+    .button-bottom .each-button{
+      min-height: 120px;
+      width: 30%;
+      margin: 2%;
+      >div.social-icons{
+        >div{
+          margin-top:0;
+        }
+        h3{
+          display:none;
+        }
+      }
+    }
+  }
+  .overlay .pop-up.take-action{
+    width:95%;
+  }
+  .overlay .pop-up.take-action .pop-up-container .pop-up-content .take-action-content p{
+    display:none;
+  }
+  .overlay .pop-up.take-action .take-action-content .col3{
+    padding:0 10px;
+  }
+}
+
+@media only screen and (max-width: 479px) and (orientation: portrait){
+  .home>div>* {
+    max-width: 95%;
+    margin: auto;
+  }
+  .home .language-button{
+    display:none;
+  }
+  .scenario>div{
+    h1{
+      font-size: 22px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .each-box{
+      margin:0 30px;
+    }
+  }
+  .scenario--single>div{
+    .title-content{
+      img{
+        width:70px;
+      }
+      h3{
+        font-size:12px;
+      }
+    }
+    font-size:12px;
+  }
+  .scenario--rent{
+    h2{
+      font-size:12px;
+    }
+    .rent-scene--up{
+      p{
+        display:none;
+      }
+      h3{
+        font-size:30px;
+      }
+      .col3.has-border{
+        padding:20px 10px;
+      }
+    }
+  }
+  .donate-scene > div{
+    h1{
+      font-size:25px;
+    }
+    img{
+      width:50px;
+    }
+    .buttons-bottom a{
+      margin-bottom:10px;
+    }
+  }
+  .win-lose-scene>div{
+    h1{
+      font-size:19px;
+    }
+    .button-bottom .each-button{
+      width:40%;
+    }
+  }
+  .flip-clock-wrapper ul{
+    height:50px;
+    li a div{
+      &.up:after{
+        top:23px;
+      }
+      div.inn{
+        font-size:50px;
+      }
+    }
+  }
+  nav{
+    >ul{
+      >li{
+        .menu-subtitle, .menu-title{
+          display:none;
+        }
+        &.left-buget{
+          > div.remain-buget span{
+            font-size:35px;
+            line-height:45px;
+            &.dolar-sign{
+              font-size:15px;
+              top:-12px;
+            }
+          }
+        }
+        &.stress{
+          width:20%;
+          img{
+            max-width: 75px;
+          }
+        }
+        &.deferred{
+          svg{
+            margin:5px 5px 0;
+            width:15%;
+          }
+        }
+      }
+    }
+  }
+  .win-lose-scene .reload-game{
+    width: auto;
+  }
+}
+
+@media only screen and (max-height:639px) and (orientation: portrait){
+  .content {
+    min-height: 300px;
+  }
+  .home>div{
+    h1{
+      margin-bottom:20px;
+    }
+    h2{
+      margin-bottom:20px;
+    }
+    img{
+      margin-bottom:20px;
+    }
+    .select-custom{
+      margin:0;
+    }
+  }
+  .scenario>div{
+    .each-box {
+      width: 90px;
+      padding:10px;
+      margin:0;
+      &:hover {
+        .icon-box {
+          height: 90px;
+        }
+        h3{
+          font-size:14px;
+        }
+      }
+      .icon-box {
+        height: 70px;
+      }
+    }
+    h3{
+      font-size:10px;
+      margin-top:10px;
+    }
+  }
+  .scenario--single>div{
+    top: 10px;
+    @include transform(translateY(0));
+    .title-content{
+      img{
+        margin-bottom:5px;
+      }
+      h3{
+        margin-bottom:5px;
+      }
+    }
+    p{
+      padding:0 10px;
+      font-size:12px;
+      min-height:0;
+    }
+    .button-box{
+      margin:10px 0;
+    }
+  }
+  .question-ask>div{
+    max-height:100%;
+    h2{
+      font-size:19px;
+    }
+  }
+  .win-lose-scene>div{
+    max-height: 370px;
+    @include transform(none);
+    top:10px;
+    overflow-y:scroll;
+  }
+  .question-answer>div .consequence-box{
+    h4,hr{
+      display:none;
+    }
+    h2{
+      font-size:15px;
+    }
+  }
+}
+
+@media only screen and (max-width:359px) and (orientation: portrait){
+  .home>div{
+    h1{
+      font-size:34px;
+      margin-bottom:10px;
+    }
+    h2{
+      margin-bottom:10px;
+    }
+    img{
+      margin-bottom:20px
+    }
+    .select-custom{
+      margin-top:20px;
+      width:250px;
+      .select-option-play{
+        width:50px;
+      }
+      .select-options-content{
+        width:200px;
+        select{
+          padding:7px 30px;
+        }
+      }
+    }
+  }
+  nav>ul>li.left-buget>div.remain-buget span{
+    font-size:28px;
+  }
+  nav>ul>li.stress img{
+    max-width:60px;
+    margin-top:5px;
+  }
+  .scenario--rent .rent-scene--up h3{
+    font-size:26px;
+  }
+  .win-lose-scene>div .button-bottom .each-button>div.social-icons>div a{
+    width:35px;
+    height:35px;
+    margin:10px 5px 0;
+    i{
+      font-size:22px;
+      line-height: 35px;
+    }
+  }
+  .scenario--rent>div,.donate-scene>div{
+    top:10px;
+    @include transform(translateY(0));
+  }
+  .question-answer>div .consequence-box{
+    top:10px;
+    @include transform(translateY(0) translateX(-50%));
+  }
+  .donate-scene>div{
+    padding:0;
+    h1{
+      font-size:17px;
+      margin:10px 0;
+    }
+    .buttons-bottom{
+      margin-top:10px;
+    }
+  }
+  .overlay .pop-up.take-action{
+    .pop-up-container .pop-up-content .take-action-content h2{
+      padding:10px 0;
+      font-size:15px;
+    }
+    .pop-up-container .pop-up-content .take-action-share{
+      padding:15px 0;
+    }
+  }
+  .scenario--rent .rent-scene--up img{
+    width:100%;
+  }
+}

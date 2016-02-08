@@ -1,0 +1,88 @@
+@import '_fvariable.scss';
+@import '_mixin.scss';
+.loader {
+    color: #dcdce2;
+    text-shadow: 1px 1px 2px #D7281E;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -140px;
+    margin-top: -140px;
+    width: 280px;
+    height: 280px;
+    text-align: center;
+    font-family: "franklin-gothic-urw-cond",sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 280px;
+    -webkit-font-smoothing: antialiased;
+    opacity:0.2;
+    &:after,
+    &:before {
+        content: "";
+        border-radius: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+        transform-origin: center center;
+    }
+    &:after {
+        box-shadow: inset 0 17.5px 0 transparentize(lighten($red-color,30%),0.7), inset 17.5px 0 0 transparentize(lighten($red-color,20%),0.7), inset 0 -17.5px 0 transparentize(lighten($red-color,10%),0.7), inset -17.5px 0 0 transparentize($red-color,0.7);
+        -webkit-animation: rotar 2s -0.5s linear infinite;
+        animation: rotar 2s -0.5s linear infinite;
+    }
+    &:before {
+        box-shadow: inset 0 17.5px 0 transparentize(darken($white-color,30%),0.7), inset 17.5px 0 0 transparentize(darken($white-color,20%),0.7), inset 0 -17.5px 0 transparentize(darken($white-color,10%),0.7), inset -17.5px 0 0 transparentize($white-color,0.7);
+        -webkit-animation: rotarIz 2s -0.5s linear infinite;
+        animation: rotarIz 2s -0.5s linear infinite;
+    }
+}
+@-webkit-keyframes rotar {
+    0% {
+        @include transform(rotateZ(0deg) scaleX(1) scaleY(1));
+    }
+    50% {
+        @include transform(rotateZ(180deg) scaleX(0.82) scaleY(0.95));
+    }
+    100% {
+        @include transform(rotateZ(360deg) scaleX(1) scaleY(1));
+    }
+}
+@keyframes rotar {
+    0% {
+        @include transform(rotateZ(0deg) scaleX(1) scaleY(1));
+    }
+    50% {
+        @include transform(rotateZ(180deg) scaleX(0.82) scaleY(0.95));
+    }
+    100% {
+        @include transform(rotateZ(360deg) scaleX(1) scaleY(1));
+    }
+}
+@-webkit-keyframes rotarIz {
+    0% {
+        @include transform(rotateZ(0deg) scaleX(1) scaleY(1));
+    }
+    50% {
+        @include transform(rotateZ(-180deg) scaleX(0.95) scaleY(0.85));
+    }
+    100% {
+        @include transform(rotateZ(-360deg) scaleX(1) scaleY(1));
+    }
+}
+@keyframes rotarIz {
+    0% {
+        @include transform(rotateZ(0deg) scaleX(1) scaleY(1));
+    }
+    50% {
+        @include transform(rotateZ(-180deg) scaleX(0.95) scaleY(0.85));
+    }
+    100% {
+        @include transform(rotateZ(-360deg) scaleX(1) scaleY(1));
+    }
+}
